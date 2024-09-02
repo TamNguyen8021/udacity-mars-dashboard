@@ -1,38 +1,27 @@
-/* -------------------  MOBILE  --------------------- */
-
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial;
-  min-height: 100vh;
-}
-
-header {
-  /* header styles */
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, sans-serif;
+	min-height: 100vh;
 }
 
 main {
-  flex: 1;
-  padding: 20px;
+	flex: 1;
+	padding: 20px;
 }
 
-footer {
-  /* footer styles */
+.photo-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
 }
 
-/* -------------------  TABLET  --------------------- */
-@media (min-width: 768px) {
-  /* use mobile */
+.photo-details-container {
+	padding: 10px;
+	text-align: center;
 }
 
-/* -------------------  DESKTOP  -------------------- */
-
-@media (min-width: 1224px) {
-  /* use mobile */
-}
-
-/* -------------------  LARGE SCREENS  -------------- */
-
-@media (min-width: 1824px) {
-  /* use mobile */
+.photo {
+	max-width: 100%;
+	height: auto;
 }
