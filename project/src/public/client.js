@@ -20,9 +20,9 @@ const render = async (root, state) => {
 const App = () => {
 	return `
 		<main>
-				<h1>Welcome to Mars dashboard</h1>
+				<h1 class="title">Welcome to Mars dashboard</h1>
 				<section>
-						<h3>Each rover has its own set of photos. Select one of them to see more details.</h3>
+						<h3 class="intro">Each rover has its own set of photos. Select one of them to see more details.</h3>
 						<div id="rover-buttons"></div>
 				</section>
 		</main>
@@ -101,6 +101,8 @@ const showRoverButtons = (rovers) => {
 
 	rovers.forEach((rover) => {
 		const button = document.createElement("button");
+
+		button.className = "btn-rover";
 		button.textContent = rover;
 		button.addEventListener("click", () => showRoverInformation(rover));
 		buttonContainer.appendChild(button);

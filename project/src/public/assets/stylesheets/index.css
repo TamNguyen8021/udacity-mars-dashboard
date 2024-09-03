@@ -10,6 +10,26 @@ main {
 	padding: 20px;
 }
 
+.intro {
+	margin: 8px 0 24px;
+}
+
+#rover-buttons {
+	display: flex;
+	gap: 16px;
+}
+
+.btn-rover {
+	background: white;
+	border: none;
+	font-size: 1.25rem;
+}
+
+.btn-rover:hover {
+	cursor: pointer;
+	font-weight: 700;
+}
+
 .photo-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -24,4 +44,23 @@ main {
 .photo {
 	max-width: 100%;
 	height: auto;
+}
+
+/* -------------------  MOBILE  --------------------- */
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.intro {
+		font-size: 1rem;
+	}
+
+	#rover-buttons {
+		flex-direction: column;
+	}
+
+	.btn-rover {
+		font-size: 1rem;
+	}
 }
